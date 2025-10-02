@@ -4,12 +4,14 @@
   "version": "1.0",
   "description": "Fixes the warp when lesson names are to long",
   "icons": {
-    "48": "avans-logo.png"
+    "48": "content/avans-logo.png"
   },
   "content_scripts": [
     {
       "matches": ["*://*.avans.one/*"],
-      "css": ["content.css"]
+      "css": ["style.css"],
+      "js": ["main.js"],
+      "run_at": "document_idle"
     }
   ]
 }
