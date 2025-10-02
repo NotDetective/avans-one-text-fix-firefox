@@ -3,15 +3,13 @@
   "name": "Avans One fix",
   "version": "1.0",
   "description": "Fixes the warp when lesson names are to long",
-  "icons": 
-        {
-        "48": "avans-logo.png"
-        },
-  "content_scripts": 
-        [
-            {
-            "matches": ["*://*.avans.one/*"],
-            "css": ["content.css"]
-            }
-        ]
+  "icons": {
+    "48": "avans-logo.png"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://*.avans.one/*"],
+      "css": ["content.css"]
+    }
+  ]
 }
